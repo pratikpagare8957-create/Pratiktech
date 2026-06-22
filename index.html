@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal AI | Neural Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Clean, high-readability font for crystal white accents -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Subtle atmospheric ambient background glow -->
+    <div class="ambient-glow"></div>
+
+    <header>
+        <div class="logo">CRYSTAL.AI</div>
+        <nav>
+            <a href="#features">Core</a>
+            <a href="#demo">Console</a>
+            <a href="https://github.com" target="_blank" class="git-link">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="badge">Next-Gen Intelligence</div>
+            <h1>The future is <span class="crystal-text">crystal clear.</span></h1>
+            <p>A pristine, deep-contrast computing engine built to automate complex data topologies instantly.</p>
+            <div class="cta-group">
+                <button class="btn-primary" onclick="focusConsole()">Launch Console</button>
+                <button class="btn-secondary">Read Blueprint</button>
+            </div>
+        </section>
+
+        <section id="demo" class="console-section">
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="terminal-title">crystal-ai-node --secure</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="line-output">>> Initializing quantum neural network weights...</p>
+                    <p class="line-output">>> Status: <span class="accent-active">Online</span></p>
+                    <div class="input-line">
+                        <span>$</span>
+                        <input type="text" id="ai-input" placeholder="Ask Crystal AI something..." onkeydown="handleQuery(event)">
+                    </div>
+                    <p id="ai-response" class="crystal-response"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
